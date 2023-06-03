@@ -23,7 +23,7 @@
        
        
    
-       $sql = "INSERT INTO leaves (`L_id`, `Leave_type`, `Start date`, `End date`, `No of days`, `Description`, `Status`, `Firstname`, `Lastname`, `Email`) VALUES ('$id', '$leavetype', '$startdate', '$enddate', '$days', '$reason', '$status', '$fname', '$lname', '$email')";
+       $sql = "INSERT INTO leaves (`L_id`, `Leave_type`, `Start_date`, `End_date`, `No_of_days`, `Description`, `Status`, `Firstname`, `Lastname`, `Email`) VALUES ('$id', '$leavetype', '$startdate', '$enddate', '$days', '$reason', '$status', '$fname', '$lname', '$email')";
     
         if(mysqli_query($conn, $sql)){?>
             <script>
