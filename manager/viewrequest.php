@@ -59,13 +59,13 @@ if (mysqli_num_rows($result) > 0){
             <label>Leave type:</label>
             <input type="text" name="leavename" value="<?php echo $row["Leave_type"]; ?>">
             <label>Number of leave days:</label>
-            <input type="number" name="days" value="<?php echo $row["No of days"]; ?>"><br><br>
+            <input type="number" name="days" value="<?php echo $row["No_of_days"]; ?>"><br><br>
             <label>Reason:</label>
             <input type="text" name="description" value="<?php echo $row["Description"]; ?>"><br><br>
             <label>Start date:</label>
-            <input type="date" name="start" value="<?php echo $row["Start date"]; ?>">
+            <input type="date" name="start" value="<?php echo $row["Start_date"]; ?>">
             <label>End date:</label>
-            <input type="date" name="end" value="<?php echo $row["End date"]; ?>"><br><br>
+            <input type="date" name="end" value="<?php echo $row["End_date"]; ?>"><br><br>
             <label>Status:</label>
             <input type="radio"  name="status" value="Approve" <?php echo $row["Status"]=="Approve"?"checked":"" ?>>Approve
             <input type="radio"  name="status" value="Reject" <?php echo $row["Status"]=="Reject"?"checked":"" ?>>Reject<br><br>
